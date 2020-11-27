@@ -7,25 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F017CF9255DD831009E4475 /* NB_Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F017CF8255DD831009E4475 /* NB_Color.swift */; };
+		4F31A40A255EA3DA001BE80A /* GridScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F31A409255EA3DA001BE80A /* GridScreen.swift */; };
+		4F31A40D255EA3E3001BE80A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F31A40C255EA3E3001BE80A /* Model.swift */; };
 		4F39D348255D0D5B0074DD36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F39D347255D0D5B0074DD36 /* AppDelegate.swift */; };
 		4F39D34A255D0D5B0074DD36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F39D349255D0D5B0074DD36 /* SceneDelegate.swift */; };
-		4F39D34C255D0D5B0074DD36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F39D34B255D0D5B0074DD36 /* ViewController.swift */; };
+		4F39D34C255D0D5B0074DD36 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F39D34B255D0D5B0074DD36 /* WalkthroughViewController.swift */; };
 		4F39D34F255D0D5B0074DD36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F39D34D255D0D5B0074DD36 /* Main.storyboard */; };
 		4F39D352255D0D5B0074DD36 /* Buy_SellPoint.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F39D350255D0D5B0074DD36 /* Buy_SellPoint.xcdatamodeld */; };
 		4F39D354255D0D5C0074DD36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F39D353255D0D5C0074DD36 /* Assets.xcassets */; };
 		4F39D357255D0D5C0074DD36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F39D355255D0D5C0074DD36 /* LaunchScreen.storyboard */; };
+		4F39D378255D23690074DD36 /* InfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F39D377255D23690074DD36 /* InfoPageViewController.swift */; };
+		4F39D37B255D239D0074DD36 /* IntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F39D37A255D239C0074DD36 /* IntroPageViewController.swift */; };
+		4F39D37E255D23C70074DD36 /* DemoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F39D37D255D23C70074DD36 /* DemoPageViewController.swift */; };
+		4F39D381255D23EB0074DD36 /* DealingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F39D380255D23EB0074DD36 /* DealingPageViewController.swift */; };
+		4F39D387255D4B860074DD36 /* WalkthroughNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F39D386255D4B860074DD36 /* WalkthroughNavigationViewController.swift */; };
+		4F39D38B255D4BB70074DD36 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F39D38A255D4BB70074DD36 /* WalkthroughPageViewController.swift */; };
+		4F39D38E255D4BEB0074DD36 /* WalkthroughScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F39D38D255D4BEB0074DD36 /* WalkthroughScreenViewController.swift */; };
+		4F39D393255D50150074DD36 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F39D392255D50150074DD36 /* Global.swift */; };
+		4FAA8FFF256135B400619238 /* NB_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA8FFE256135B400619238 /* NB_UIView.swift */; };
+		4FC141F1255E5861000A9055 /* UserChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC141F0255E5861000A9055 /* UserChoiceViewController.swift */; };
+		4FC141F9255E7163000A9055 /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC141F8255E7163000A9055 /* PinViewController.swift */; };
+		4FC141FC255E7174000A9055 /* PatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC141FB255E7174000A9055 /* PatternViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F017CF8255DD831009E4475 /* NB_Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NB_Color.swift; sourceTree = "<group>"; };
+		4F31A409255EA3DA001BE80A /* GridScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridScreen.swift; sourceTree = "<group>"; };
+		4F31A40C255EA3E3001BE80A /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4F39D344255D0D5B0074DD36 /* Buy&SellPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Buy&SellPoint.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F39D347255D0D5B0074DD36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F39D349255D0D5B0074DD36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4F39D34B255D0D5B0074DD36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F39D34B255D0D5B0074DD36 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		4F39D34E255D0D5B0074DD36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F39D351255D0D5B0074DD36 /* Buy_SellPoint.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Buy_SellPoint.xcdatamodel; sourceTree = "<group>"; };
 		4F39D353255D0D5C0074DD36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F39D356255D0D5C0074DD36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F39D358255D0D5C0074DD36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F39D377255D23690074DD36 /* InfoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageViewController.swift; sourceTree = "<group>"; };
+		4F39D37A255D239C0074DD36 /* IntroPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPageViewController.swift; sourceTree = "<group>"; };
+		4F39D37D255D23C70074DD36 /* DemoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPageViewController.swift; sourceTree = "<group>"; };
+		4F39D380255D23EB0074DD36 /* DealingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealingPageViewController.swift; sourceTree = "<group>"; };
+		4F39D386255D4B860074DD36 /* WalkthroughNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughNavigationViewController.swift; sourceTree = "<group>"; };
+		4F39D38A255D4BB70074DD36 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		4F39D38D255D4BEB0074DD36 /* WalkthroughScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughScreenViewController.swift; sourceTree = "<group>"; };
+		4F39D392255D50150074DD36 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		4FAA8FFE256135B400619238 /* NB_UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NB_UIView.swift; sourceTree = "<group>"; };
+		4FC141F0255E5861000A9055 /* UserChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChoiceViewController.swift; sourceTree = "<group>"; };
+		4FC141F8255E7163000A9055 /* PinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewController.swift; sourceTree = "<group>"; };
+		4FC141FB255E7174000A9055 /* PatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F017CF7255DD7BF009E4475 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4F017CF8255DD831009E4475 /* NB_Color.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		4F39D33B255D0D5B0074DD36 = {
 			isa = PBXGroup;
 			children = (
@@ -60,14 +98,53 @@
 			children = (
 				4F39D347255D0D5B0074DD36 /* AppDelegate.swift */,
 				4F39D349255D0D5B0074DD36 /* SceneDelegate.swift */,
-				4F39D34B255D0D5B0074DD36 /* ViewController.swift */,
 				4F39D34D255D0D5B0074DD36 /* Main.storyboard */,
 				4F39D353255D0D5C0074DD36 /* Assets.xcassets */,
 				4F39D355255D0D5C0074DD36 /* LaunchScreen.storyboard */,
 				4F39D358255D0D5C0074DD36 /* Info.plist */,
 				4F39D350255D0D5B0074DD36 /* Buy_SellPoint.xcdatamodeld */,
+				4F39D374255D203D0074DD36 /* Walkthrough */,
+				4FC141EF255E5804000A9055 /* Pin and Pattern */,
+				4F39D391255D4F450074DD36 /* Utils */,
+				4F017CF7255DD7BF009E4475 /* Extension */,
 			);
 			path = "Buy&SellPoint";
+			sourceTree = "<group>";
+		};
+		4F39D374255D203D0074DD36 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				4F39D34B255D0D5B0074DD36 /* WalkthroughViewController.swift */,
+				4F39D386255D4B860074DD36 /* WalkthroughNavigationViewController.swift */,
+				4F39D38A255D4BB70074DD36 /* WalkthroughPageViewController.swift */,
+				4F39D38D255D4BEB0074DD36 /* WalkthroughScreenViewController.swift */,
+				4F39D37A255D239C0074DD36 /* IntroPageViewController.swift */,
+				4F39D377255D23690074DD36 /* InfoPageViewController.swift */,
+				4F39D37D255D23C70074DD36 /* DemoPageViewController.swift */,
+				4F39D380255D23EB0074DD36 /* DealingPageViewController.swift */,
+			);
+			path = Walkthrough;
+			sourceTree = "<group>";
+		};
+		4F39D391255D4F450074DD36 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4F39D392255D50150074DD36 /* Global.swift */,
+				4FAA8FFE256135B400619238 /* NB_UIView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4FC141EF255E5804000A9055 /* Pin and Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				4FC141F0255E5861000A9055 /* UserChoiceViewController.swift */,
+				4FC141F8255E7163000A9055 /* PinViewController.swift */,
+				4FC141FB255E7174000A9055 /* PatternViewController.swift */,
+				4F31A409255EA3DA001BE80A /* GridScreen.swift */,
+				4F31A40C255EA3E3001BE80A /* Model.swift */,
+			);
+			path = "Pin and Pattern";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +217,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F39D34C255D0D5B0074DD36 /* ViewController.swift in Sources */,
+				4F39D34C255D0D5B0074DD36 /* WalkthroughViewController.swift in Sources */,
+				4F39D37E255D23C70074DD36 /* DemoPageViewController.swift in Sources */,
+				4F39D38B255D4BB70074DD36 /* WalkthroughPageViewController.swift in Sources */,
+				4FC141FC255E7174000A9055 /* PatternViewController.swift in Sources */,
+				4F39D387255D4B860074DD36 /* WalkthroughNavigationViewController.swift in Sources */,
+				4F39D381255D23EB0074DD36 /* DealingPageViewController.swift in Sources */,
+				4FAA8FFF256135B400619238 /* NB_UIView.swift in Sources */,
 				4F39D348255D0D5B0074DD36 /* AppDelegate.swift in Sources */,
 				4F39D34A255D0D5B0074DD36 /* SceneDelegate.swift in Sources */,
+				4F39D378255D23690074DD36 /* InfoPageViewController.swift in Sources */,
+				4F31A40D255EA3E3001BE80A /* Model.swift in Sources */,
+				4FC141F9255E7163000A9055 /* PinViewController.swift in Sources */,
+				4F017CF9255DD831009E4475 /* NB_Color.swift in Sources */,
+				4F39D393255D50150074DD36 /* Global.swift in Sources */,
+				4F31A40A255EA3DA001BE80A /* GridScreen.swift in Sources */,
+				4F39D37B255D239D0074DD36 /* IntroPageViewController.swift in Sources */,
 				4F39D352255D0D5B0074DD36 /* Buy_SellPoint.xcdatamodeld in Sources */,
+				4FC141F1255E5861000A9055 /* UserChoiceViewController.swift in Sources */,
+				4F39D38E255D4BEB0074DD36 /* WalkthroughScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
