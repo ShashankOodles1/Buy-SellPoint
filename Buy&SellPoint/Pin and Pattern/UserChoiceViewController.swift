@@ -19,7 +19,7 @@ class UserChoiceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(hexString: "#87CEFA")
+       // view.backgroundColor = UIColor(hexString: "#87CEFA")
         pinBtn.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
         patternBtn.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
         

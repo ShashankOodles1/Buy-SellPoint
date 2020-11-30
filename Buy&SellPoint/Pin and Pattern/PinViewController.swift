@@ -8,10 +8,10 @@
 import UIKit
 
 class PinViewController: UIViewController {
-    var correctPassword:String = "1234567"
+    var firstPassword :String = ""
+    var SecondPassword :String = ""
     var defaultPasword: String = ""
-
-    
+    var labelText : Bool = true
     @IBOutlet weak var enterLabel: UILabel!
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var passcodeView: UIView!
@@ -38,13 +38,9 @@ class PinViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
-        
+        //self.enterLabel.text! = "enter PIN"
     }
-    
-    var savepassword = [UIButton]()
-    
-    
-    
+   
     
     
     @IBAction func onPressButton(_ sender: UIButton){
@@ -102,13 +98,16 @@ class PinViewController: UIViewController {
         else if defaultPasword.count == 1
         {
             btn12.isHidden = false
-            view1.backgroundColor = UIColor.white
+            view1.backgroundColor = UIColor.white//
             view2.backgroundColor = UIColor.clear
             view3.backgroundColor = UIColor.clear
             view4.backgroundColor = UIColor.clear
             view5.backgroundColor = UIColor.clear
             view6.backgroundColor = UIColor.clear
-            view7.backgroundColor = UIColor.clear        }
+            
+            view7.backgroundColor = UIColor.clear
+            
+        }
         else if defaultPasword.count == 2
         {
             btn12.isHidden = false
@@ -141,6 +140,7 @@ class PinViewController: UIViewController {
             view2.backgroundColor = UIColor.white
             view3.backgroundColor = UIColor.white
             view4.backgroundColor = UIColor.white
+            
             view5.backgroundColor = UIColor.clear
             view6.backgroundColor = UIColor.clear
             view7.backgroundColor = UIColor.clear
@@ -156,11 +156,10 @@ class PinViewController: UIViewController {
             view5.backgroundColor = UIColor.white
             view6.backgroundColor = UIColor.clear
             view7.backgroundColor = UIColor.clear
-            
         }
         else if defaultPasword.count == 6
         {
-          //  btnBackspace.isHidden = false
+            btn12.isHidden = false
             view1.backgroundColor = UIColor.white
             view2.backgroundColor = UIColor.white
             view3.backgroundColor = UIColor.white
@@ -183,64 +182,70 @@ class PinViewController: UIViewController {
             
         }
         
-        if defaultPasword.count < 7 {
-         //
-        }
-        else {
-            
-            if defaultPasword ==  correctPassword
-            {
+        if defaultPasword.count == 7 {
+         
+            firstPassword = defaultPasword
+            if firstPassword == defaultPasword  {
                 resetValue()
-                //self.alert(message: "correct pin", Title: "coorect Password")
-                self.parent?.addChild(PinViewController.init())
-            }
-            else {
-                   resetValue()
-            }
-        }
-    }
-    @IBAction func onclickOkBtn(_ sender: Any) {
-    }
-    func resetValue() {
-            defaultPasword = ""
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
-                self.view1.backgroundColor = UIColor.clear
-                self.view2.backgroundColor = UIColor.clear
-                self.view3.backgroundColor = UIColor.clear
-                self.view4.backgroundColor = UIColor.clear
-                self.view5.backgroundColor = UIColor.clear
-                self.view6.backgroundColor = UIColor.clear
-                self.view7.backgroundColor = UIColor.clear
-            }
-        }
+                let cofirmVc = self.storyboard?.instantiateViewController(identifier: "LoginViewController")
+                  
+                self.navigationController?.pushViewController(cofirmVc!, animated: true)
+                
+                }
+
         
-        func configureUI(){
-            resetValue()
-            view1.layer.cornerRadius = view1.frame.height / 2
-            view2.layer.cornerRadius = view1.frame.height / 2
-            view3.layer.cornerRadius = view1.frame.height / 2
-            view4.layer.cornerRadius = view1.frame.height / 2
-            view5.layer.cornerRadius = view1.frame.height / 2
-            view6.layer.cornerRadius = view1.frame.height / 2
-            view7.layer.cornerRadius = view1.frame.height / 2
-            view1.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
-            view2.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
-            view3.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
-            view4.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
-            view5.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
-            view6.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
-            view7.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
-            //imgView.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
-            imgView.makeRoundCorner()
-            btn1.dropShadow()
+    
             
             
-        }
-    
-    
-    
+            else {
+                resetValue()
+                
+            
+            }
+       }
 }
     
+
+   
+    
+    func resetValue() {
+        defaultPasword = ""
+       
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
+            self.view1.backgroundColor = UIColor.clear
+            self.view2.backgroundColor = UIColor.clear
+            self.view3.backgroundColor = UIColor.clear
+            self.view4.backgroundColor = UIColor.clear
+            self.view5.backgroundColor = UIColor.clear
+            self.view6.backgroundColor = UIColor.clear
+            self.view7.backgroundColor = UIColor.clear
+        }
+    }
+    
+    func configureUI(){
+        resetValue()
+        view1.layer.cornerRadius = view1.frame.height / 2
+        view2.layer.cornerRadius = view1.frame.height / 2
+        view3.layer.cornerRadius = view1.frame.height / 2
+        view4.layer.cornerRadius = view1.frame.height / 2
+        view5.layer.cornerRadius = view1.frame.height / 2
+        view6.layer.cornerRadius = view1.frame.height / 2
+        view7.layer.cornerRadius = view1.frame.height / 2
+        view1.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
+        view2.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
+        view3.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
+        view4.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
+        view5.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
+        view6.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
+        view7.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
+        imgView.drawBorder(borderWidth: 1, bordorColor: .white, clipToBound: true)
+        imgView.makeRoundCorner()
+        btn1.dropShadow()
+        
+        
+    }
+    
+}
 public extension UIViewController {
     func alert (message:String ,Title:String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -249,13 +254,15 @@ public extension UIViewController {
         self.present(alertController, animated: true, completion: nil)
         
     }
+    
 }
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
 
 

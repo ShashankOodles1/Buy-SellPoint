@@ -11,7 +11,7 @@ class PatternViewController: UIViewController {
 
     var lockScreenView: GridScreen!
     var label : UILabel?
-    
+    var letOrder = [0,1,2,4,6,7,8]
     private var columnsize :Int = 3
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +34,8 @@ class PatternViewController: UIViewController {
         lockScreenView = GridScreen(frame: lockFrame, size: size, config: config) { [weak self] (pattern, order) in
             print(order.description)
             print(pattern)
+          
+            
         }
         view.addSubview(lockScreenView)
     }
